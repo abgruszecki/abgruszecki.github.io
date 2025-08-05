@@ -20,15 +20,12 @@ The particular questions include
 (5) How to migrate large existing code bases to the new system?
 Find out in the slide deck &lt;a href="https://www.slideshare.net/Odersky/capabilities-for-resources-and-effects-252161040" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
 &lt;p>CC&amp;lt;:◻ is neither the first nor the last formalism for Capture Tracking.
-I discuss the developments that led to CC&amp;lt;:◻ in my dissertation on
-the &amp;ldquo;Formal Foundations of Capture Tracking&amp;rdquo;,
-which I&amp;rsquo;ll be defending privately on 25th of January, 2024.
-I&amp;rsquo;ll be happy to send you a preprint via email,
-otherwise I&amp;rsquo;ll publish the final version and link it here not too long after the defense.
-(Fingers crossed!)&lt;/p>
+I discuss the developments that led to CC&amp;lt;:◻
+in &lt;a href="https://infoscience.epfl.ch/record/309351?v=pdf" target="_blank" rel="noopener">my dissertation&lt;/a>
+on the &amp;ldquo;Formal Foundations of Capture Tracking&amp;rdquo;.&lt;/p>
 &lt;p>Capture Tracking is particularly focused on usability and ergonomics,
 so naturally there is an implementation,
-developed to a &lt;em>significant&lt;/em> extent by Martin Odersky.
+developed to first and foremost by Martin Odersky.
 You can find out more on &lt;a href="https://docs.scala-lang.org/scala3/reference/experimental/cc.html" target="_blank" rel="noopener">this&lt;/a> page.&lt;/p>
 &lt;p>Work progresses on developing CC&amp;lt;:◻ further.
 A formal system which enriches it with safe concurrency
