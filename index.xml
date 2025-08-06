@@ -16,9 +16,19 @@ to the point where it rivals its 32B sibling, sometimes completely outclassing i
 &lt;/div>&lt;/figure>
 &lt;/p>
 &lt;h2 id="links">Links&lt;/h2>
-&lt;p>An ArXiv report is due to be published today, August 6th 2025.&lt;/p>
-&lt;p>This page will be updated with links to artifacts needed to verify our results.&lt;/p>
+&lt;p>An ArXiv report is due to be published today, August 6th 2025.
+It can already be accessed &lt;a href="./agnostics.pdf">here&lt;/a>.&lt;/p>
+&lt;p>Our trained models are available &lt;a href="https://huggingface.co/nuprl/agnostics" target="_blank" rel="noopener">here&lt;/a>.
+The repository has tags named the same as the models from the paper.&lt;/p>
+&lt;p>The script for evaluating models on Ag-LiveCodeBench-X can be found &lt;a href="https://github.com/nuprl/Ag-LiveCodeBench-X" target="_blank" rel="noopener">here&lt;/a>.
+The associated dataset is available &lt;a href="https://huggingface.co/datasets/nuprl/Ag-LiveCodeBench-X" target="_blank" rel="noopener">here&lt;/a>,
+and our containerized verifiers are available &lt;a href="https://github.com/orgs/nuprl/packages/container/package/agnostics" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
+&lt;p>We will also release our training framework together with a formal publication!&lt;/p>
 &lt;h2 id="brief-overview">Brief overview&lt;/h2>
+&lt;p>Our key novel idea is to judge code &lt;em>only&lt;/em> by its externally observable behaviour (e.g., I/O).
+Some existing datasets are already in such a format, many others can be rewritten to it.
+We can write a universal verifier for such code, which lets us teach a model any programming language.
+One universal verifier + a tiny YAML file per language = reinforcement learning that works everywhere.&lt;/p>
 &lt;p>
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
@@ -32,7 +42,16 @@ with a small (4-5 line) configuration.
 language-agnostic execution sandbox that we develop.
 (4) The result is a model specialized to the target language.&lt;/p>
 &lt;p>Our approach particularly excels at finetuning models for low-resource languages,
-since it does not rely on language-specific high-quality datasets.&lt;/p></description></item><item><title>Capture Tracking</title><link>https://abgru.me/project/capture-tracking/</link><pubDate>Mon, 15 Jan 2024 17:40:17 +0000</pubDate><guid>https://abgru.me/project/capture-tracking/</guid><description>&lt;p>Capture Tracking is an approach to tracking the capture of capabilities in types,
+since it does not rely on language-specific high-quality datasets.&lt;/p>
+&lt;p>An analysis of the generated programs shows that the trained models make fewer syntax and API mistakes.
+The models have learned the simpler rules of the language,
+which also reveals the algorithmic mistakes they make.
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./Figure6.png" alt="Figure 6 from the paper" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>Find out more by reading the paper &lt;a href="./agnostics.pdf">here&lt;/a>!&lt;/p></description></item><item><title>Capture Tracking</title><link>https://abgru.me/project/capture-tracking/</link><pubDate>Mon, 15 Jan 2024 17:40:17 +0000</pubDate><guid>https://abgru.me/project/capture-tracking/</guid><description>&lt;p>Capture Tracking is an approach to tracking the capture of capabilities in types,
 which has been the subject of a long collaboration with
 Martin Odersky,
 Jonathan Brachthäuser,
