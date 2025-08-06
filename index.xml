@@ -1,4 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ABG</title><link>https://abgru.me/</link><atom:link href="https://abgru.me/index.xml" rel="self" type="application/rss+xml"/><description>ABG</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><image><url>https://abgru.me/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url><title>ABG</title><link>https://abgru.me/</link></image><item><title>Capture Tracking</title><link>https://abgru.me/project/capture-tracking/</link><pubDate>Mon, 15 Jan 2024 17:40:17 +0000</pubDate><guid>https://abgru.me/project/capture-tracking/</guid><description>&lt;p>Capture Tracking is an approach to tracking the capture of capabilities in types,
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ABG</title><link>https://abgru.me/</link><atom:link href="https://abgru.me/index.xml" rel="self" type="application/rss+xml"/><description>ABG</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><image><url>https://abgru.me/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url><title>ABG</title><link>https://abgru.me/</link></image><item><title>Agnostics</title><link>https://abgru.me/project/agnostics/</link><pubDate>Wed, 06 Aug 2025 17:40:17 +0000</pubDate><guid>https://abgru.me/project/agnostics/</guid><description>&lt;p>Agnostics is a collaboration with
+Yangtian Zi,
+Zixuan Wu,
+Tejas Oberoi,
+Carolyn Jane Anderson,
+Joydeep Biswas,
+and Arjun Guha.&lt;/p>
+&lt;p>We show how to turn an existing dataset of coding problems into
+a reinforcement learning environment which can be adapted to &lt;em>any&lt;/em> programming language.
+Our training improves Qwen 3 4B ability to code in low-resource programming languages
+to the point where it rivals its 32B sibling, sometimes completely outclassing it.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./Table1.png" alt="Table 1 from the paper" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h2 id="links">Links&lt;/h2>
+&lt;p>An ArXiv report is due to be published today, August 6th 2025.&lt;/p>
+&lt;p>This page will be updated with links to artifacts needed to verify our results.&lt;/p>
+&lt;h2 id="brief-overview">Brief overview&lt;/h2>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./Figure1.png" alt="Figure 1 from the paper" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>(1) We use an LLM to reformulate language-specific datasets into our standard language-agnostic format.
+(2) We generate prompts and a configured verifier targeting a particular language,
+with a small (4-5 line) configuration.
+(3) We apply reinforcement learning with verified rewards (RLVR) using a robust,
+language-agnostic execution sandbox that we develop.
+(4) The result is a model specialized to the target language.&lt;/p>
+&lt;p>Our approach particularly excels at finetuning models for low-resource languages,
+since it does not rely on language-specific high-quality datasets.&lt;/p></description></item><item><title>Capture Tracking</title><link>https://abgru.me/project/capture-tracking/</link><pubDate>Mon, 15 Jan 2024 17:40:17 +0000</pubDate><guid>https://abgru.me/project/capture-tracking/</guid><description>&lt;p>Capture Tracking is an approach to tracking the capture of capabilities in types,
 which has been the subject of a long collaboration with
 Martin Odersky,
 Jonathan Brachthäuser,
