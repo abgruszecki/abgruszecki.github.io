@@ -1,34 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ABG</title><link>https://abgru.me/</link><atom:link href="https://abgru.me/index.xml" rel="self" type="application/rss+xml"/><description>ABG</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><image><url>https://abgru.me/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url><title>ABG</title><link>https://abgru.me/</link></image><item><title>Agnostics</title><link>https://abgru.me/project/agnostics/</link><pubDate>Wed, 06 Aug 2025 17:40:17 +0000</pubDate><guid>https://abgru.me/project/agnostics/</guid><description>&lt;p>Agnostics is a collaboration with
-Yangtian Zi,
-Zixuan Wu,
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ABG</title><link>https://abgru.me/</link><atom:link href="https://abgru.me/index.xml" rel="self" type="application/rss+xml"/><description>ABG</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><image><url>https://abgru.me/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url><title>ABG</title><link>https://abgru.me/</link></image><item><title>Agnostics</title><link>https://abgru.me/project/agnostics/</link><pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate><guid>https://abgru.me/project/agnostics/</guid><description>&lt;p>Agnostics is a collaboration with
+&lt;a href="https://ccs.neu.edu/~ytzi/" target="_blank" rel="noopener">Yangtian Zi&lt;/a>,
+&lt;a href="https://aryawu0513.github.io/" target="_blank" rel="noopener">Zixuan Wu&lt;/a>,
 Tejas Oberoi,
-Carolyn Jane Anderson,
-Joydeep Biswas,
-and Arjun Guha.&lt;/p>
+&lt;a href="https://canders1.github.io/" target="_blank" rel="noopener">Carolyn Jane Anderson&lt;/a>,
+&lt;a href="https://www.cs.utexas.edu/people/faculty-researchers/joydeep-biswas" target="_blank" rel="noopener">Joydeep Biswas&lt;/a>,
+and &lt;a href="https://ccs.neu.edu/~arjunguha/main/home/" target="_blank" rel="noopener">Arjun Guha&lt;/a>.&lt;/p>
 &lt;p>We show how to turn an existing dataset of coding problems into
 a reinforcement learning environment which can be adapted to &lt;em>any&lt;/em> programming language.
-Our training improves Qwen 3 4B ability to code in low-resource programming languages
-to the point where it rivals its 32B sibling, sometimes completely outclassing it.&lt;/p>
-&lt;p>
+Our approach turns Qwen 3 4B and 8B into SOTA ≤16B models for low-resource programming languages,
+rivaling much larger models, including their 32B sibling.
+And when we trained Qwen 3 4B on very low-resource programming languages,
+the comparison wasn&amp;rsquo;t even fair.
+(We&amp;rsquo;re comparing them on our multi-language version of LiveCodeBench,
+which we&amp;rsquo;re releasing together with the report!)&lt;/p>
+&lt;!--
+Our training improves Qwen 3 4B's ability to code in low-resource programming languages
+to the point where it rivals its 32B sibling, sometimes completely outclassing it.
+-->
+&lt;!-- This is technically a GFM table. -->
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="./Table1.png" alt="Table 1 from the paper" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="./Table6.png" alt="Table 6 from the paper" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
-&lt;/p>
+&lt;/th>
+&lt;th style="text-align:center">
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./Table7.png" alt="Table 7 from the paper" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;/table>
 &lt;h2 id="links">Links&lt;/h2>
-&lt;p>An ArXiv report is due to be published today, August 6th 2025.
-It can already be accessed &lt;a href="./agnostics.pdf">here&lt;/a>.&lt;/p>
-&lt;p>Our trained models are available &lt;a href="https://huggingface.co/nuprl/agnostics" target="_blank" rel="noopener">here&lt;/a>.
-The repository has tags named the same as the models from the paper.&lt;/p>
+&lt;p>An ArXiv report will be published soon.
+It can be found &lt;a href="./agnostics.pdf">here&lt;/a>.&lt;/p>
+&lt;p>Our trained models are available &lt;a href="https://huggingface.co/nuprl/agnostics" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
 &lt;p>The script for evaluating models on Ag-LiveCodeBench-X can be found &lt;a href="https://github.com/nuprl/Ag-LiveCodeBench-X" target="_blank" rel="noopener">here&lt;/a>.
-The associated dataset is available &lt;a href="https://huggingface.co/datasets/nuprl/Ag-LiveCodeBench-X" target="_blank" rel="noopener">here&lt;/a>,
-and our containerized verifiers are available &lt;a href="https://github.com/orgs/nuprl/packages/container/package/agnostics" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
-&lt;p>We will also release our training framework together with a formal publication!&lt;/p>
+The dataset is available &lt;a href="https://huggingface.co/datasets/nuprl/Ag-LiveCodeBench-X" target="_blank" rel="noopener">here&lt;/a>,
+and our verifiers are available &lt;a href="https://github.com/orgs/nuprl/packages/container/package/agnostics" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
+&lt;p>We will also release our training framework after a formal publication!&lt;/p>
 &lt;h2 id="brief-overview">Brief overview&lt;/h2>
-&lt;p>Our key novel idea is to judge code &lt;em>only&lt;/em> by its externally observable behaviour (e.g., I/O).
-Some existing datasets are already in such a format, many others can be rewritten to it.
-We can write a universal verifier for such code, which lets us teach a model any programming language.
-One universal verifier + a tiny YAML file per language = reinforcement learning that works everywhere.&lt;/p>
+&lt;p>Our key novel idea is to judge code &lt;em>only&lt;/em> by its externally observable behavior (e.g., I/O).
+Some datasets are already in such a format, many others can be rewritten to it.
+We can write a universal verifier for such problems, which lets us teach a model any programming language.
+One universal verifier + a tiny per-language YAML file = reinforcement learning that works everywhere.&lt;/p>
 &lt;p>
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
@@ -37,7 +57,7 @@ One universal verifier + a tiny YAML file per language = reinforcement learning 
 &lt;/p>
 &lt;p>(1) We use an LLM to reformulate language-specific datasets into our standard language-agnostic format.
 (2) We generate prompts and a configured verifier targeting a particular language,
-with a small (4-5 line) configuration.
+with a small (often 4-line!) configuration.
 (3) We apply reinforcement learning with verified rewards (RLVR) using a robust,
 language-agnostic execution sandbox that we develop.
 (4) The result is a model specialized to the target language.&lt;/p>
