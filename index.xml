@@ -42,8 +42,8 @@ to the point where it rivals its 32B sibling, sometimes completely outclassing i
 &lt;/thead>
 &lt;/table>
 &lt;h2 id="links">Links&lt;/h2>
-&lt;p>An ArXiv report will be published soon.
-It can be found &lt;a href="./agnostics.pdf">here&lt;/a>.&lt;/p>
+&lt;p>An ArXiv report is available &lt;a href="https://arxiv.org/abs/2508.04865" target="_blank" rel="noopener">here&lt;/a>;
+the most up-to-date version, with minor typos fixed, can be found &lt;a href="./agnostics.pdf">here&lt;/a>.&lt;/p>
 &lt;p>Our trained models are available &lt;a href="https://huggingface.co/nuprl/agnostics" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
 &lt;p>The script for evaluating models on Ag-LiveCodeBench-X can be found &lt;a href="https://github.com/nuprl/Ag-LiveCodeBench-X" target="_blank" rel="noopener">here&lt;/a>.
 The dataset is available &lt;a href="https://huggingface.co/datasets/nuprl/Ag-LiveCodeBench-X" target="_blank" rel="noopener">here&lt;/a>,
