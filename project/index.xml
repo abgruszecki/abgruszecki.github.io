@@ -76,41 +76,49 @@ which also reveals the algorithmic mistakes they make.
 &lt;div class="w-100" >&lt;img src="./Figure6.png" alt="Figure 6 from the paper" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
-&lt;p>Find out more by reading the paper &lt;a href="./agnostics.pdf">here&lt;/a>!&lt;/p></description></item><item><title>Capture Tracking</title><link>https://abgru.me/project/capture-tracking/</link><pubDate>Mon, 15 Jan 2024 17:40:17 +0000</pubDate><guid>https://abgru.me/project/capture-tracking/</guid><description>&lt;p>Capture Tracking is an approach to tracking the capture of capabilities in types,
-which has been the subject of a long collaboration with
-Martin Odersky,
-Jonathan Brachthäuser,
-Ondřej Lhoták,
-and Edward Lee,
-and to which a number of other people have contributed.&lt;/p>
-&lt;p>The foundational formal system for the approach is CC&amp;lt;:◻,
-published in &lt;a href="https://dl.acm.org/doi/abs/10.1145/3618003" target="_blank" rel="noopener">TOPLAS&lt;/a>.
-Its algorithmic aspects are discussed in a
-&lt;a href="https://arxiv.org/abs/2306.06496" target="_blank" rel="noopener">technical report&lt;/a>.&lt;/p>
-&lt;p>Martin Odersky&amp;rsquo;s Caprese project
-is focused on investigating these formal foundations further
-and developing their applications.
+&lt;p>Find out more by reading the paper &lt;a href="./agnostics.pdf">here&lt;/a>!&lt;/p></description></item><item><title>Capture Tracking</title><link>https://abgru.me/project/capture-tracking/</link><pubDate>Mon, 15 Jan 2024 17:40:17 +0000</pubDate><guid>https://abgru.me/project/capture-tracking/</guid><description>&lt;p>Capture Tracking uses object capabilities tracked in types to unify effect and resource ownership systems.
+It was the main topic of my PhD and a subject of a long collaboration with
+&lt;a href="https://people.epfl.ch/martin.odersky?lang=en" target="_blank" rel="noopener">Martin Odersky&lt;/a>,
+&lt;a href="https://se.informatik.uni-tuebingen.de/team/brachthaeuser/" target="_blank" rel="noopener">Jonathan Brachthäuser&lt;/a>,
+&lt;a href="https://plg.uwaterloo.ca/~olhotak/" target="_blank" rel="noopener">Ondřej Lhoták&lt;/a>,
+and Edward Lee.
+A number of other people have contributed to the project,
+including &lt;a href="https://www.yichenxu.me/" target="_blank" rel="noopener">Yichen Xu&lt;/a>
+and
+&lt;a href="https://bracevac.org/" target="_blank" rel="noopener">Oliver Bračevac&lt;/a>.&lt;/p>
+&lt;p>I&amp;rsquo;m no longer directly involved in the effort.
+For more up-to-date information, try the &lt;a href="https://capless.cc/" target="_blank" rel="noopener">Capture Checking&lt;/a> website.
+Oliver Bračevac&amp;rsquo;s
+&lt;a href="https://bracevac.org/assets/pdf/scaladays2025_annot.pdf" target="_blank" rel="noopener">Scala Days 2025 presentation&lt;/a>
+also shows a number of more recent developments in detail.&lt;/p>
+&lt;p>My contributions,
+presented in &lt;a href="https://infoscience.epfl.ch/record/309351?v=pdf" target="_blank" rel="noopener">my thesis&lt;/a>,
+were centered around the formal foundations for the approach.
+The foundational formal system I was involved with is CC&amp;lt;:◻,
+published in &lt;a href="https://dl.acm.org/doi/abs/10.1145/3618003" target="_blank" rel="noopener">TOPLAS 2023&lt;/a>.
+My thesis also discusses other developments which led to CC&amp;lt;:◻.&lt;/p>
+&lt;p>I also proposed Gradient,
+a Scala extension for gradually securing and compartmentalizing existing applications
+via object capabilities tracked in types.
+The associated paper was published at &lt;a href="https://dl.acm.org/doi/10.1145/3689751" target="_blank" rel="noopener">OOPSLA 2024&lt;/a>;
+the &lt;a href="https://www.youtube.com/watch?v=5BcldnDr4kY" target="_blank" rel="noopener">OOPSLA presentation&lt;/a> gives an accessible overview.&lt;/p>
+&lt;p>An algorithmic version of CC&amp;lt;:◻ is discussed in a &lt;a href="https://arxiv.org/abs/2306.06496" target="_blank" rel="noopener">technical report&lt;/a>.&lt;/p>
+&lt;p>By the time I wrote my thesis, the Scala implementation was developed first and foremost by Martin Odersky.
+See the official documentation &lt;a href="https://docs.scala-lang.org/scala3/reference/experimental/cc.html" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
+&lt;p>The implementation was extended with a number of features since my thesis, which led to System Capless,
+an updated formal foundation for the system published at &lt;a href="https://dl.acm.org/doi/abs/10.1145/3763112" target="_blank" rel="noopener">OOPSLA 2025&lt;/a>.&lt;/p>
+&lt;p>System Capybara extends Capture Tracking with safe concurrency features,
+as presented on its &lt;a href="https://capless.cc/#/project/system-capybara" target="_blank" rel="noopener">project page&lt;/a>.
+A formal system from which System Capybara evolved was published at &lt;a href="https://dl.acm.org/doi/abs/10.1145/3649853" target="_blank" rel="noopener">OOPSLA 2024&lt;/a>.&lt;/p>
+&lt;p>Gears is an ongoing project to extend Scala with structured async computation in direct style,
+with one-shot continuations as a primitive.
+See the project website &lt;a href="https://lampepfl.github.io/gears/" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
+&lt;p>Martin Odersky&amp;rsquo;s ongoing Caprese project aims to further develop both the formal foundations
+and the practical applications of Capture Tracking.
 The particular questions include
 (1) How to solve the &amp;ldquo;what color is your function&amp;rdquo; problem when mixing synchronous and asynchronous programming?
 (2) How to express effect polymorphism without creating boilerplate?
 (3) How to combine manual and automatic memory management?
 (4) How to express high-level concurrency and parallelism, safely?
 (5) How to migrate large existing code bases to the new system?
-Find out in the slide deck &lt;a href="https://www.slideshare.net/Odersky/capabilities-for-resources-and-effects-252161040" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
-&lt;p>CC&amp;lt;:◻ is neither the first nor the last formalism for Capture Tracking.
-I discuss the developments that led to CC&amp;lt;:◻
-in &lt;a href="https://infoscience.epfl.ch/record/309351?v=pdf" target="_blank" rel="noopener">my dissertation&lt;/a>
-on the &amp;ldquo;Formal Foundations of Capture Tracking&amp;rdquo;.&lt;/p>
-&lt;p>Capture Tracking is particularly focused on usability and ergonomics,
-so naturally there is an implementation,
-developed to first and foremost by Martin Odersky.
-You can find out more on &lt;a href="https://docs.scala-lang.org/scala3/reference/experimental/cc.html" target="_blank" rel="noopener">this&lt;/a> page.&lt;/p>
-&lt;p>Work progresses on developing CC&amp;lt;:◻ further.
-A formal system which enriches it with safe concurrency
-(by tracking separation of capabilities)
-was conditionally accepted for OOPSLA 2024.
-Find the preprint &lt;a href="https://arxiv.org/abs/2308.07474" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
-&lt;p>There is also ongoing work on using the Capture Tracking implementation
-to develop a base library for async computation in direct style.
-A &amp;ldquo;strawman&amp;rdquo; version of this library is available in a Github repository
-&lt;a href="https://github.com/lampepfl/gears" target="_blank" rel="noopener">here&lt;/a>.&lt;/p></description></item></channel></rss>
+See the slide deck &lt;a href="https://www.slideshare.net/Odersky/capabilities-for-resources-and-effects-252161040" target="_blank" rel="noopener">here&lt;/a>.&lt;/p></description></item></channel></rss>
