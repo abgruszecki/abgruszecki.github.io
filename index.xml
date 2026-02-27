@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ABG</title><link>https://abgru.me/</link><atom:link href="https://abgru.me/index.xml" rel="self" type="application/rss+xml"/><description>ABG</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><image><url>https://abgru.me/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url><title>ABG</title><link>https://abgru.me/</link></image><item><title>Agnostics</title><link>https://abgru.me/project/agnostics/</link><pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate><guid>https://abgru.me/project/agnostics/</guid><description>&lt;p>Agnostics is a collaboration with
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ABG</title><link>https://abgru.me/</link><atom:link href="https://abgru.me/index.xml" rel="self" type="application/rss+xml"/><description>ABG</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><image><url>https://abgru.me/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url><title>ABG</title><link>https://abgru.me/</link></image><item><title>Agnostics</title><link>https://abgru.me/project/agnostics/</link><pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate><guid>https://abgru.me/project/agnostics/</guid><description>&lt;p>Agnostics (accepted at ICLR 2026) is a collaboration with
 &lt;a href="https://ccs.neu.edu/~ytzi/" target="_blank" rel="noopener">Yangtian Zi&lt;/a>,
 &lt;a href="https://aryawu0513.github.io/" target="_blank" rel="noopener">Zixuan Wu&lt;/a>,
 Tejas Oberoi,
@@ -29,26 +29,26 @@ to the point where it rivals its 32B sibling, sometimes completely outclassing i
 &lt;th style="text-align:center">
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="./Table6.png" alt="Table 6 from the paper" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="./Table1.png" alt="Table 1 from the paper" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/th>
 &lt;th style="text-align:center">
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="./Table7.png" alt="Table 7 from the paper" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="./Table2.png" alt="Table 2 from the paper" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;/table>
 &lt;h2 id="links">Links&lt;/h2>
-&lt;p>An ArXiv report is available &lt;a href="https://arxiv.org/abs/2508.04865" target="_blank" rel="noopener">here&lt;/a>;
-the most up-to-date version, with minor typos fixed, can be found &lt;a href="./agnostics.pdf">here&lt;/a>.&lt;/p>
+&lt;p>The ICLR paper is available &lt;a href="https://openreview.net/forum?id=mjDT60Ffms" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
+&lt;p>The ArXiv report is available &lt;a href="https://arxiv.org/abs/2508.04865" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
 &lt;p>Our trained models are available &lt;a href="https://huggingface.co/nuprl/agnostics" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
 &lt;p>The script for evaluating models on Ag-LiveCodeBench-X can be found &lt;a href="https://github.com/nuprl/Ag-LiveCodeBench-X" target="_blank" rel="noopener">here&lt;/a>.
 The dataset is available &lt;a href="https://huggingface.co/datasets/nuprl/Ag-LiveCodeBench-X" target="_blank" rel="noopener">here&lt;/a>,
 and our verifiers are available &lt;a href="https://github.com/orgs/nuprl/packages/container/package/agnostics" target="_blank" rel="noopener">here&lt;/a>.&lt;/p>
-&lt;p>We will also release our training framework after a formal publication!&lt;/p>
+&lt;p>We will release our training framework very soon!&lt;/p>
 &lt;h2 id="brief-overview">Brief overview&lt;/h2>
 &lt;p>Our key novel idea is to judge code &lt;em>only&lt;/em> by its externally observable behavior (e.g., I/O).
 Some datasets are already in such a format, many others can be rewritten to it.
@@ -76,7 +76,7 @@ which also reveals the algorithmic mistakes they make.
 &lt;div class="w-100" >&lt;img src="./Figure6.png" alt="Figure 6 from the paper" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
-&lt;p>Find out more by reading the paper &lt;a href="./agnostics.pdf">here&lt;/a>!&lt;/p></description></item><item><title>Capture Tracking</title><link>https://abgru.me/project/capture-tracking/</link><pubDate>Mon, 15 Jan 2024 17:40:17 +0000</pubDate><guid>https://abgru.me/project/capture-tracking/</guid><description>&lt;p>Capture Tracking uses object capabilities tracked in types to unify effect and resource ownership systems.
+&lt;p>Find out more by reading the paper &lt;a href="https://arxiv.org/pdf/2508.04865" target="_blank" rel="noopener">here&lt;/a>!&lt;/p></description></item><item><title>Capture Tracking</title><link>https://abgru.me/project/capture-tracking/</link><pubDate>Mon, 15 Jan 2024 17:40:17 +0000</pubDate><guid>https://abgru.me/project/capture-tracking/</guid><description>&lt;p>Capture Tracking uses object capabilities tracked in types to unify effect and resource ownership systems.
 It was the main topic of my PhD and a subject of a long collaboration with
 &lt;a href="https://people.epfl.ch/martin.odersky?lang=en" target="_blank" rel="noopener">Martin Odersky&lt;/a>,
 &lt;a href="https://se.informatik.uni-tuebingen.de/team/brachthaeuser/" target="_blank" rel="noopener">Jonathan Brachthäuser&lt;/a>,
